@@ -53,6 +53,12 @@ import { Appointment } from "./appwrite.types";
   export declare type UpdateAppointmentParams = {
     appointmentId: string;
     userId: string;
-    appointment: Appointment;
-    type: string;
+    appointment: {
+      primaryPhysician: string;
+      schedule: Date;
+      status: Status;
+      cancellationReason: string | undefined;
+      // Include only the fields you want to update
+    };
+    type: "schedule" | "create" | "cancel";
   };

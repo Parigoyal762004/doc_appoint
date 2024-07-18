@@ -89,19 +89,19 @@ export const AppointmentForm = ({
           );
         }
       } else {
-        const appointmentToUpdate = {
+        const appointmentTUpdate = {
           userId,
           appointmentId: appointment?.$id!,
           appointment: {
             primaryPhysician: values.primaryPhysician,
             schedule: new Date(values.schedule),
             status: status as Status,
-            cancellationReason: values.cancellationReason,
+            cancellationReason: values.cancellationReason, 
           },
           type,
         };
 
-        const updatedAppointment = await updateAppointment(appointmentToUpdate);
+        const updatedAppointment = await updateAppointment(appointmentTUpdate);
 
 
         if (updatedAppointment) {
