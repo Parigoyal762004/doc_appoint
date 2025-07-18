@@ -41,19 +41,6 @@ If you’re just here to check it out or need help setting it up, feel free to e
 - **Performance Tracking**  
   Uses Sentry to catch and track errors.
 
----
-
-## 📁 Project Structure
-
-.
-├── app/ # Routes
-├── components/ # UI components
-├── lib/ # Helpers and utils
-├── public/ # Static assets
-├── styles/ # Global styles
-├── .env # Appwrite & Twilio config
-
----
 
 ## 🧠 Why I Built This
 
