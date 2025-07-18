@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# doc_appoint
 
-## Getting Started
+A simple healthcare appointment system for patients and admins. Built this mainly to explore clean full-stack app structure and real-world features like SMS notifications, file uploads, and admin controls.
 
-First, run the development server:
+If you’re just here to check it out or need help setting it up, feel free to explore or reach out.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ⚙️ Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Next.js  
+- Appwrite  
+- TypeScript  
+- Tailwind CSS  
+- ShadCN UI  
+- Twilio (for SMS)  
+- Sentry (for performance/error monitoring)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+---
 
-## Learn More
+## ✨ Features
 
-To learn more about Next.js, take a look at the following resources:
+- **Register as Patient**  
+  Sign up and manage your own profile.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Book Appointments**  
+  Book one or more appointments with available doctors.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **Admin Panel**  
+  Admins can view, confirm, cancel, or reschedule appointments.
 
-## Deploy on Vercel
+- **SMS Notifications**  
+  Patients get a text when their appointment is confirmed (Twilio).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **File Uploads**  
+  Upload reports or other documents (Appwrite storage).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Responsive UI**  
+  Looks good on mobile, tablet, desktop.
+
+- **Performance Tracking**  
+  Uses Sentry to catch and track errors.
+
+---
+
+## 📁 Project Structure
+
+.
+├── app/ # Routes
+├── components/ # UI components
+├── lib/ # Helpers and utils
+├── public/ # Static assets
+├── styles/ # Global styles
+├── .env # Appwrite & Twilio config
+
+---
+
+## 🧠 Why I Built This
+
+Wanted to build something practical — not just frontend or just backend. This project handles real-world flows: user auth, CRUD, file uploads, admin controls, SMS notifications, error monitoring — the full loop.
+
+---
+
+## 🚀 Getting Started
+
+Clone the repo  
+`git clone https://github.com/Parigoyal762004/doc_appoint`
+
+Install deps  
+`npm install`
+
+Set up your `.env` with Appwrite + Twilio keys  
+Run dev  
+`npm run dev`
+
+---
+
+## 📬 Questions?
+
+Ping me or drop an issue. Always down to help or talk dev stuff.
+
+---
+
+Made with focus and late-night debugging  
+by [@Parigoyal762004](https://github.com/Parigoyal762004)
